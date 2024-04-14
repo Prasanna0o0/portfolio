@@ -1269,3 +1269,29 @@ input:checked {
   from { width: 0 }
   to { width: 100% }
 }
+
+video {
+  display: block;
+  max-inline-size: 100%;
+  object-fit: contain;
+}
+
+
+.avatar-img {
+  border-radius: 50%;
+  width: 275px; /* Adjust size as needed */
+  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  position: relative;
+  left: -25px;
+  bottom: 20px;
+}
+
+/* Media query for smaller devices like Android */
+@media only screen and (max-width: 600px) {
+  .avatar-img {
+    width: 270px; /* Adjust size for smaller screens */
+    left: 0; /* Reset positioning */
+    bottom: 0; /* Reset positioning */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
